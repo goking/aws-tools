@@ -1,0 +1,17 @@
+default:
+  access_key_id: "ACCESS_KEY_ID"
+  secret_access_key: "SECRET_ACCESS_KEY"
+  region: "ap-northeast-1"
+
+  # options for launching instance
+  # ref. http://docs.aws.amazon.com/AWSRubySDK/latest/AWS/EC2/Client.html#run_instances-instance_method
+  launch_opts:
+    key_name: "key"
+    instance_type: "t1.micro"
+    network_interfaces:
+      - device_index: 0
+        subnet_id: "subnet-00000000"
+        associate_public_ip_address: true
+        groups:
+          - "sg-00000000"
+          - "sg-00000000"

@@ -1,0 +1,4 @@
+.aws_config
+.ruby-version
+.bundle
+vendor/bundle
