@@ -10,6 +10,7 @@ bin/rarely.rb
 The solution for rarely used instances.
 Create AMI automatically and terminate.
 
+```
   usage: [#account-name] command parameter
     account-name: must be defined in .aws_config
     command: list, shutdown, launch
@@ -17,3 +18,4 @@ Create AMI automatically and terminate.
       list: 'ami', 'instance'
       shutdown: instance-id
       launch: ami-id
+```
